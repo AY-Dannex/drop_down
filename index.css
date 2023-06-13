@@ -1,0 +1,73 @@
+body{
+    background-image: url(PianoGrande-7-1600x1200.jpg);
+}
+
+img{
+    width: 200px;
+    margin-top: -30px;
+    margin-left: 10px;
+}
+
+img:hover{
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.container{
+    display: inline-flex;
+    justify-content: space-around;
+    width: 800px;
+    margin-left: 700px;
+    border-radius: 5px;
+    
+}
+
+.dropdown-button{
+    background-color: black;
+    color: burlywood;
+    font-size: 17px;
+    width: 120px;
+    font-weight: bold;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+.dropdown-content{
+    position: absolute;
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+    z-index: 1;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.dropdown-content a{
+    color: burlywood;
+    text-decoration: none;
+    display: block;
+    width: 90px;
+    padding: 12px 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.dropdown-content a:hover{
+    background-color: #dde;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown{
+    position: relative;
+    display: block;
+}
+
+.dropdown:hover .dropdown-button{
+    background-color: rgb(63, 62, 62);
+    border-radius: 5px;
+}
